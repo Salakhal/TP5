@@ -261,7 +261,7 @@ Voici un exemple de l'exécution du programme (screenshot) :
 
 ![Exécution du programme](execution_ex4.2.PNG)
 
-![Exécution du programme](execution_ex4.3.PNG
+![Exécution du programme](execution_ex4.3.PNG)
 
 ![Exécution du programme](execution_ex4.4.PNG)
 
