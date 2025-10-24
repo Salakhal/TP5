@@ -29,6 +29,12 @@ CompteCourant #3 — solde = -200.0, découvert autorisé = 300.0
 CompteEpargne #4 — solde = 100.0, taux = 5.0%
 
 ```
+ ##  Exemple d’exécution (image)
+ 
+Voici un exemple de l'exécution du programme (screenshot) : 
+
+![Exécution du programme](execution_EX1.PNG)
+
 ---
 
  ## Exercice 2 : Héritage et gestion d’un zoo avec tableau dynamique d’animaux
@@ -53,6 +59,11 @@ Le zoo contient 6 animaux :
 Autruche s'envole avec une envergure de 1.8 m.
 
 ```
+ ##  Exemple d’exécution (image)
+ 
+Voici un exemple de l'exécution du programme (screenshot) : 
+
+![Exécution du programme](execution_EX2.PNG)
 
 
 
@@ -89,6 +100,11 @@ Distance totale parcourue : 900.0 km
 
 ```
 
+ ##  Exemple d’exécution (image)
+ 
+Voici un exemple de l'exécution du programme (screenshot) : 
+
+![Exécution du programme](execution_EX3.PNG)
 
 
 ## Exercice 4 : Gestion d'une Bibliothèque
@@ -237,6 +253,15 @@ Votre choix : 0
 Au revoir !
 
 ```
+ ##  Exemple d’exécution (image)
+ 
+Voici un exemple de l'exécution du programme (screenshot) : 
+
+![Exécution du programme](execution_EX4.1.PNG)
+![Exécution du programme](execution_EX4.2.PNG)
+![Exécution du programme](execution_EX4.3.PNG)
+![Exécution du programme](execution_EX4.4.PNG)
+
 
 
 
