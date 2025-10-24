@@ -91,11 +91,152 @@ Distance totale parcourue : 900.0 km
 
 
 
+## Exercice 4 : Gestion d'une Bibliothèque
+
+### 1. Objectif
+- Développer un système de gestion d’une bibliothèque en Java.
+- Utiliser l’encapsulation et l’auto-incrémentation pour les numéros d’enregistrement.
+- Gérer une collection dynamique de documents.
+- Fournir des opérations de base : ajouter, supprimer, afficher, rechercher, lister les auteurs.
+
+---
+ 
+### 3. Description des classes
+
+#### 3.1 `Document.java`
+- Classe de base pour tous les documents.
+- Attributs : `numEnreg` (auto-incrément), `titre`.
+- Méthodes : `getNumEnreg()`, `getTitre()`, `toString()`.
+
+#### 3.2 `Livre.java` (extends `Document`)
+- Attributs supplémentaires : `auteur`, `nbPages`.
+- Méthodes : getter/setter et `toString()` redéfini.
+
+#### 3.3 `ReferenceBook.java` (extends `Livre`)
+- Attribut supplémentaire : `domaine`.
+- Méthodes : getter/setter et `toString()` redéfini.
+
+#### 3.4 `Bibliotheque.java`
+- Attribut : tableau `Document[] documents`, compteur `nbDocuments`.
+- Méthodes :
+  - `Bibliotheque(int capacite)` – constructeur.
+  - `boolean ajouter(Document doc)` – ajoute un document.
+  - `boolean supprimer(Document doc)` – supprime un document.
+  - `Document document(int numEnrg)` – recherche par numéro.
+  - `void afficherDocuments()` – affiche tous les documents.
+  - `void afficherAuteurs()` – affiche tous les auteurs présents.
+
+#### 3.5 `Main.java` (dans package `test`)
+- Lit le nombre de documents à créer depuis le clavier.
+- Initialise la bibliothèque avec deux documents.
+- Affiche un menu permettant :
+   - Ajouter un document
+   - Supprimer un document
+   -Afficher tous les documents
+   -Rechercher un document par numéro
+   - Afficher les auteurs
+   -Quitter
 
 
+---
 
+### 4. Exemple d’exécution
 
+``` bash
+Donnez la capacité de la bibliothèque : 5
 
+--- Menu ---
+1. Ajouter un document
+2. Supprimer un document
+3. Afficher tous les documents
+4. Rechercher un document par numéro
+5. Afficher les auteurs
+0. Quitter
+Votre choix : 3
+Livre [numEnreg=1, titre=Le Petit Prince, auteur=Saint-Exupéry, nbPages=96]
+Dictionnaire [numEnreg=2, titre=Larousse, langue=Français]
+
+--- Menu ---
+1. Ajouter un document
+2. Supprimer un document
+3. Afficher tous les documents
+4. Rechercher un document par numéro
+5. Afficher les auteurs
+0. Quitter
+Votre choix : 1
+Type de document (1: Livre / 2: Dictionnaire): 1
+Titre : les miserable
+Auteur : Victor Hugo
+Nombre de pages : 1488
+
+--- Menu ---
+1. Ajouter un document
+2. Supprimer un document
+3. Afficher tous les documents
+4. Rechercher un document par numéro
+5. Afficher les auteurs
+0. Quitter
+Votre choix : 3
+Livre [numEnreg=1, titre=Le Petit Prince, auteur=Saint-Exupéry, nbPages=96]
+Dictionnaire [numEnreg=2, titre=Larousse, langue=Français]
+Livre [numEnreg=3, titre=les miserable, auteur=Victor Hugo, nbPages=1488]
+
+--- Menu ---
+1. Ajouter un document
+2. Supprimer un document
+3. Afficher tous les documents
+4. Rechercher un document par numéro
+5. Afficher les auteurs
+0. Quitter
+Votre choix : 4
+Numéro d’enregistrement : 2
+Dictionnaire [numEnreg=2, titre=Larousse, langue=Français]
+
+--- Menu ---
+1. Ajouter un document
+2. Supprimer un document
+3. Afficher tous les documents
+4. Rechercher un document par numéro
+5. Afficher les auteurs
+0. Quitter
+Votre choix : 5
+Auteurs présents dans la bibliothèque :
+- Saint-Exupéry
+- Victor Hugo
+
+--- Menu ---
+1. Ajouter un document
+2. Supprimer un document
+3. Afficher tous les documents
+4. Rechercher un document par numéro
+5. Afficher les auteurs
+0. Quitter
+Votre choix : 2
+Numéro du document à supprimer : 1
+Document supprimé !
+
+--- Menu ---
+1. Ajouter un document
+2. Supprimer un document
+3. Afficher tous les documents
+4. Rechercher un document par numéro
+5. Afficher les auteurs
+0. Quitter
+Votre choix : 3
+Dictionnaire [numEnreg=2, titre=Larousse, langue=Français]
+Livre [numEnreg=3, titre=les miserable, auteur=Victor Hugo, nbPages=1488]
+
+--- Menu ---
+1. Ajouter un document
+2. Supprimer un document
+3. Afficher tous les documents
+4. Rechercher un document par numéro
+5. Afficher les auteurs
+0. Quitter
+Votre choix : 0
+Au revoir !
+
+```
 
 
 
