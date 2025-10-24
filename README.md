@@ -6,18 +6,7 @@
 
 Comprendre et mettre en œuvre l’héritage en Java à travers une hiérarchie concrète de classes : un compte bancaire de base (Compte), dont héritent deux types spécialisés (CompteEpargne et CompteCourant), chacun ajoutant son propre comportement.
 
-## 2. Structure du projet
-
-``` bash
-TP5/
-└─ src/
-   └─ com.example.tp/
-      ├ Compte.java
-      ├ CompteEpargne.java
-      ├ CompteCourant.java
-      └ Main.java
-```
- ## 3. Résultat attendu
+ ## 2. Résultat attendu
  
 ``` bash
 Compte #1 — solde = 1000.0
@@ -42,14 +31,14 @@ CompteEpargne #4 — solde = 100.0, taux = 5.0%
 ```
 ---
 
- ##Exercice 2 : Héritage et gestion d’un zoo avec tableau dynamique d’animaux
+ ## Exercice 2 : Héritage et gestion d’un zoo avec tableau dynamique d’animaux
  
 ##  1. Objectif
 
-Concevoir en Java une hiérarchie de classes pour modéliser un zoo, en appliquant l’héritage (sans abstrait ni interface) et en gérant un tableau d’Animal qui s’agrandit dynamiquement.
+Concevoir en Java une hiérarchie de classes pour modéliser un zoo, en appliquant l’héritage (sans abstrait ni interface) et en gérant un tableau d’`Animal` qui s’agrandit dynamiquement.
 
 
- ## 3. Résultat attendu
+ ## 2. Résultat attendu
  
 ``` bash
 Le zoo contient 6 animaux :
@@ -62,21 +51,43 @@ Le zoo contient 6 animaux :
 
 Éléphant allaite ses petits.
 Autruche s'envole avec une envergure de 1.8 m.
+
 ```
 
-TP5/
-│
-├── src/
-   └── com/
-       └── example/
-           └── tp/
-               ├── Animal.java
-               ├── Mammifere.java
-               ├── Oiseau.java
-               ├── Reptile.java
-               ├── Zoo.java
-               └── Main.java
 
+
+## Exercice 3 : Parc de véhicules – Héritage, composition et gestion de flotte
+
+### 1. Objectif
+- Modéliser un parc de véhicules en Java.
+- Utiliser une hiérarchie multi-niveaux : `Vehicule → Motorise → Voiture, Camion, Moto, VoitureElectrique`.
+- Utiliser la composition via la classe `Moteur`.
+- Gérer le carburant ou la batterie sans lever d’exceptions.
+- Créer une classe `Flotte` qui stocke dynamiquement les véhicules et calcule des statistiques.
+
+## Exemple de sortie attendue
+
+``` bash
+
+Flotte (4 véhicules) :
+  • Vehicule#1 [Clio] {Essence 75ch, carburant=50.0} {Voiture, portes=5}
+  • Vehicule#2 [Volvo] {Diesel 400ch, carburant=200.0} {Camion, cap=20.0 t}
+  • Vehicule#3 [Harley] {Essence 90ch, carburant=20.0} {Moto, cylindrée=1200.0 cm³}
+  • Vehicule#4 [Tesla] {Élec 300ch, batterie=85.0} {Electrique}
+
+Clio démarre avec 50.0 unités et moteur Essence 75ch
+Clio a roulé 100.0 km, reste 40.0 unités
+Clio ravitaillé de 20.0 unités (nouveau niveau : 60.0)
+Clio a roulé 300.0 km, reste 30.0 unités
+
+Tesla démarre avec 85.0 unités et moteur Élec 300ch
+Tesla a roulé 200.0 km, reste 65.0 unités
+Tesla recharge 50.0 kWh (niveau=115.0)
+Tesla a roulé 300.0 km, reste 85.0 unités
+
+Distance totale parcourue : 900.0 km
+
+```
 
 
 
