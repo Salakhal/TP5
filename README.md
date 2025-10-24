@@ -33,7 +33,7 @@ CompteEpargne #4 — solde = 100.0, taux = 5.0%
  
 Voici un exemple de l'exécution du programme (screenshot) : 
 
-![Exécution du programme](execution_EX1.PNG)
+![Exécution du programme](execution_ex1.PNG)
 
 ---
 
