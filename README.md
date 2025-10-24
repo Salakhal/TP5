@@ -63,7 +63,7 @@ Autruche s'envole avec une envergure de 1.8 m.
  
 Voici un exemple de l'exécution du programme (screenshot) : 
 
-![Exécution du programme](execution_EX2.PNG)
+![Exécution du programme](execution_ex2.PNG)
 
 
 
@@ -104,7 +104,7 @@ Distance totale parcourue : 900.0 km
  
 Voici un exemple de l'exécution du programme (screenshot) : 
 
-![Exécution du programme](execution_EX3.PNG)
+![Exécution du programme](execution_ex3.PNG)
 
 
 ## Exercice 4 : Gestion d'une Bibliothèque
@@ -257,10 +257,13 @@ Au revoir !
  
 Voici un exemple de l'exécution du programme (screenshot) : 
 
-![Exécution du programme](execution_EX4.1.PNG)
-![Exécution du programme](execution_EX4.2.PNG)
-![Exécution du programme](execution_EX4.3.PNG)
-![Exécution du programme](execution_EX4.4.PNG)
+![Exécution du programme](execution_ex4.1.PNG)
+
+![Exécution du programme](execution_ex4.2.PNG)
+
+![Exécution du programme](execution_ex4.3.PNG
+
+![Exécution du programme](execution_ex4.4.PNG)
 
 
 
